@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recommendation-claim-audit"
+version = "0.1.0"
+description = "Offline static audit of documented claims against Python source"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+
+[project.scripts]
+recommendation-claim-audit = "recommendation_claim_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["recommendation_claim_audit*"]
